@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Card with Side Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-10">
+                <div class="card ">
+                    <div class="card-header">
+                        <h4 class="card-title">chart setting</h4>
+                    </div>
+                    <div class="card-body">
+                        <section class="main-section">
+                            <aside class="side-menu" style="width: 25%">
+                                <ul>
+                                    <li><i class="fas fa-atom Symbol"></i> <a href="/Symbol">Symbol</a></li>
+                                    <li><i class="fas fa-chart-line Status"></i> <a href="/Status">Status line</a></li>
+                                    <li><i class="fas fa-balance-scale Scales"></i> <a href="/Scales">Scales</a></li>
+                                    <li><i class="fas fa-paint-brush Canvas"></i> <a href="/Canvas">Canvas</a></li>
+                                    <li><i class="fas fa-exchange-alt Tradding"></i> <a href="/Tradding">Tradding</a>
+                                    </li>
+                                    <li><i class="fas fa-calendar-alt Events"></i> <a href="/Events">Events</a></li>
+                                </ul>
+                            </aside>
+                            <div class="content" style="width: 75%">
+                                <h6>CANDLES</h6>
+
+
+                                <div class="section">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="color-bars-checkbox">
+                                        <label for="color-bars-checkbox">Color bars on previous close</label>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Body</label>
+                                        </div>
+                                        <div>
+                                            <input type="color" id="color-picker1" value="#F23645"> <!-- Red -->
+                                            <input type="color" id="color-picker2" value="#089981">
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Borders</label>
+                                        </div>
+                                        <div>
+                                            <input type="color" id="color-picker1" value="#F23645"> <!-- Red -->
+                                            <input type="color" id="color-picker2" value="#089981">
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Wick</label>
+                                        </div>
+                                        <div>
+                                            <input type="color" id="color-picker1" value="#F23645"> <!-- Red -->
+                                            <input type="color" id="color-picker2" value="#089981">
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <h6>PRICE LINE</h6>
+                                <div class="section">
+
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Last</label>
+                                        </div>
+                                        <div>
+                                            <div class="custom-color-picker">
+                                                <input type="color" id="color-picker" value="#FF0000">
+                                                <div class="line-thickness-container">
+                                                    <label for="line-thickness"> Thickness:</label>
+                                                    <input type="range" id="line-thickness" min="1" max="10" value="1">
+                                                    <span id="line-thickness-value">1</span>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">High and Low</label>
+                                        </div>
+                                        <div>
+                                            <div class="custom-color-picker">
+                                                <input type="color" id="color-picker" value="#22AB94">
+                                                <div class="line-thickness-container">
+                                                    <label for="line-thickness"> Thickness:</label>
+                                                    <input type="range" id="line-thickness" min="1" max="10" value="1">
+                                                    <span id="line-thickness-value">1</span>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Bid and Task</label>
+                                        </div>
+                                        <div>
+                                            <input type="color" id="color-picker1" value="#F23645"> <!-- Red -->
+                                            <input type="color" id="color-picker2" value="#089981">
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <h6>DATA MODIFICATION</h6>
+                                <div class="section">
+
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <p>Precision</p>
+                                            <div>
+                                                <select class="form-control">
+                                                    <option>Default</option>
+                                                    <option>Settings</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <p>Precision</p>
+                                            <div>
+                                                <select class="form-control">
+                                                    <option>UTC</option>
+                                                    <option>Settings</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <select class="form-control">
+                                    <option>Templete</option>
+                                    <option>Settings</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button class="btn  btn-outline-primary">cancel</button>
+                                <button class="btn btn-primary">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

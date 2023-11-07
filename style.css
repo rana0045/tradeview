@@ -1,0 +1,136 @@
+.main-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    /* Remove bullets */
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 21px;
+    background: aliceblue;
+
+    border-radius: 10px;
+    width: 100%;
+    padding: 9%;
+}
+
+ul li i {
+    color: gray;
+    /* Set icon color to gray */
+}
+
+ul li a {
+    text-decoration: none;
+    color: gray;
+    /* Set link text color to gray */
+    margin-left: 5px;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 12px !important;
+}
+
+.side-menu {
+    border-right: solid 1px gray;
+    margin-right: 56px;
+    padding: 21px;
+    height: full;
+    height: auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+input[type="color"] {
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 30px;
+    /* Adjust the width as needed */
+    height: 30px;
+    /* Adjust the height as needed */
+    padding: 0;
+    border: solid white 4px;
+    outline: solid gray 1px;
+}
+
+.custom-color-picker {
+display: flex;
+align-items: center;
+}
+
+.checkbox {
+display: flex;
+align-items: center;
+}
+
+.color-picker-container {
+display: flex;
+align-items: center;
+}
+
+.color-pickers {
+display: flex;
+align-items: center;
+}
+
+input[type="color"] {
+margin-right: 10px;
+}
+
+input[type="range"] {
+width: 100px;
+margin-right: 10px;
+}
+
+#line-thickness-value {
+width: 20px;
+}
+
+
+
+.h6,
+h6 {
+    font-size: 11px;
+    color: gray;
+}
+
+
+p{
+    margin-right: 40%;
+}
