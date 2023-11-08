@@ -31,5 +31,23 @@ function updateLineThickness() {
     // Use the selectedLineThickness for your drawing or styling
 }
 
+
+
+function showSection(sectionId) {
+    // Hide all sections
+    var sections = document.querySelectorAll('.content');
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = 'none';
+    }
+    // Show the selected section
+    var selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+}
 // JavaScript to show/hide color pickers when checkboxes are checked/unchecked
 
+
+window.onload = function () {
+    showSection('Symbol')
+}
