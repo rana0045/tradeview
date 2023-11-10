@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -30,10 +29,9 @@
                                     <li><i class="fas fa-calendar-alt Events"></i> <a href="javascript:void(0);" onclick="showSection('Events')">Events</a></li>
                                 </ul>
                             </aside>
+                            <!-- ------------------symbol---------------------------- -->
                             <div class="content" id="Symbol" style="width: 75%">
                                 <h6>CANDLES</h6>
-
-
                                 <div class="section">
                                     <div class="checkbox">
                                         <input type="checkbox" id="color-bars-checkbox">
@@ -69,13 +67,9 @@
                                             <input type="color" id="color-picker2" value="#089981">
                                         </div>
                                     </div>
-
-
-
                                 </div>
                                 <h6>PRICE LINE</h6>
                                 <div class="section">
-
                                     <div class="column">
                                         <div class="checkbox">
                                             <input type="checkbox" id="color-picker1-checkbox">
@@ -90,8 +84,6 @@
                                                     <span id="line-thickness-value">1</span>
                                                 </div>
                                             </div>
-
-
                                         </div>
                                     </div>
                                     <div class="column">
@@ -108,8 +100,6 @@
                                                     <span id="line-thickness-value">1</span>
                                                 </div>
                                             </div>
-
-
                                         </div>
                                     </div>
                                     <div class="column">
@@ -122,13 +112,9 @@
                                             <input type="color" id="color-picker2" value="#089981">
                                         </div>
                                     </div>
-
-
-
                                 </div>
                                 <h6>DATA MODIFICATION</h6>
                                 <div class="section">
-
                                     <div class="column">
                                         <div class="checkbox">
                                             <p>Precision</p>
@@ -140,7 +126,6 @@
                                             </div>
                                         </div>
                                         <div>
-
                                         </div>
                                     </div>
                                     <div class="column">
@@ -154,15 +139,13 @@
                                             </div>
                                         </div>
                                         <div>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- ------------------status---------------------------- -->
                             <div class="content" id="Status" style="width: 75%">
-                                <h6>Symbol</h6>
-
-
+                                <h6>Status</h6>
                                 <div class="section">
                                     <div class="checkbox">
                                         <input type="checkbox" id="color-bars-checkbox">
@@ -185,49 +168,39 @@
                                             <input type="checkbox" id="color-picker1-checkbox">
                                             <label for="color-picker1-checkbox">Market Status</label>
                                         </div>
-                                       
                                     </div>
                                     <div class="column">
                                         <div class="checkbox">
                                             <input type="checkbox" id="color-picker1-checkbox">
                                             <label for="color-picker1-checkbox">OHLC values</label>
                                         </div>
-                                        
                                     </div>
                                     <div class="column">
                                         <div class="checkbox">
                                             <input type="checkbox" id="color-picker1-checkbox">
                                             <label for="color-picker1-checkbox">Volume</label>
                                         </div>
-                                        
                                     </div>
                                     <div class="column">
                                         <div class="checkbox">
                                             <input type="checkbox" id="color-picker1-checkbox">
                                             <label for="color-picker1-checkbox">Last day change values</label>
                                         </div>
-                                        
                                     </div>
                                     <div class="column">
                                         <div class="checkbox">
                                             <input type="checkbox" id="color-picker1-checkbox">
                                             <label for="color-picker1-checkbox">Bar change values</label>
                                         </div>
-                                        
                                     </div>
-
-
-
                                 </div>
                                 <h6>INDICATORS</h6>
                                 <div class="section">
-
                                     <div class="column">
                                         <div class="checkbox">
                                             <input type="checkbox" id="color-picker1-checkbox">
                                             <label for="color-picker1-checkbox">Last</label>
                                         </div>
-                                       
                                     </div>
                                     <div class="column">
                                         <div class="checkbox">
@@ -238,44 +211,183 @@
                                             <input type="checkbox" id="color-picker1-checkbox">
                                             <label for="color-picker1-checkbox">Argument</label>
                                         </div>
-                                       
                                     </div>
                                     <div class="column">
                                         <div class="checkbox">
                                             <input type="checkbox" id="color-picker1-checkbox">
                                             <label for="color-picker1-checkbox">Values</label>
                                         </div>
-                                       
                                     </div>
-
                                     <div class="column">
                                         <div class="checkbox">
                                             <input type="checkbox" id="color-picker1-checkbox">
                                             <label for="color-picker1-checkbox">Backgorund</label>
                                         </div>
                                         <div class="line-thickness-container">
-                                         
                                             <input type="range" id="background-thickness" min="1" max="10" value="1">
                                             <span id="background-thickness-value">1</span>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ------------------Scales---------------------------- -->
+                            <div class="content" id="Scales" style="width: 75%">
+                                <h6>Labels on price scale</h6>
+                                <div class="section">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="color-bars-checkbox">
+                                        <label for="color-bars-checkbox">Symbol name</label>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Symbol last price</label>
+                                        </div>
+                                        <div>
+                                            <select class="form-control">
+                                                <option>Default</option>
+                                                <option>Settings</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Bid and ask</label>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">High and low price</label>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Indicators and financials name</label>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Indicators and financials value</label>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">No overlapping</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6>Price Scale</h6>
+                                <div class="section">
+                                    
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Countdown to bar close</label>
+                                        </div>
                                        
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Plus button</label>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                             
+                                            <label for="color-picker1-checkbox">Currency and Unit</label>
+                                        </div>
+                                        <div>
+                                            <select class="form-control">
+                                                <option>Default</option>
+                                                <option>Settings</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                         
+                                            <label for="color-picker1-checkbox">Scale modes (A and L)</label>
+                                        </div>
+                                        <div>
+                                            <select class="form-control">
+                                                <option>Default</option>
+                                                <option>Settings</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Lock price to bar ratio</label>
+                                        </div>
+                                        <div>
+                                            <select class="form-control">
+                                                <option>Default</option>
+                                                <option>Settings</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                     
+                                            <label for="color-picker1-checkbox">Scales placement</label>
+                                        </div>
+                                        <div>
+                                            <select class="form-control">
+                                                <option>Default</option>
+                                                <option>Settings</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6>Time Scale</h6>
+                                <div class="section">
+                                    <div class="column">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="color-picker1-checkbox">
+                                            <label for="color-picker1-checkbox">Day of week on labels</label>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                     
+                                            <label for="color-picker1-checkbox">Date format</label>
+                                        </div>
+                                        <div>
+                                            <select class="form-control">
+                                                <option>Default</option>
+                                                <option>Settings</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="checkbox">
+                                     
+                                            <label for="color-picker1-checkbox">Time hours format</label>
+                                        </div>
+                                        <div>
+                                            <select class="form-control">
+                                                <option>Default</option>
+                                                <option>Settings</option>
+                                            </select>
+                                        </div>
                                     </div>
 
                                 </div>
                                 
                             </div>
-                            <div class="content" id="Scales" style="width: 75%">
-                            2
-                             </div>
-                             <div class="content" id="Canvas" style="width: 75%">
-                               3
-                             </div>
-                             <div class="content" id="Tradding" style="width: 75%">
-                              4
-                             </div>
-                             <div class="content" id="Events" style="width: 75%">
-                              5
-                             </div>
+                            <!-- ------------------Canvas---------------------------- -->
+                            <div class="content" id="Canvas" style="width: 75%"> 3 </div>
+                            <!-- ------------------Trading---------------------------- -->
+                            <div class="content" id="Tradding" style="width: 75%"> 4 </div>
+                            <!-- ------------------Evenets---------------------------- -->
+                            <div class="content" id="Events" style="width: 75%"> 5 </div>
                         </section>
                     </div>
                     <div class="card-footer">
