@@ -138,3 +138,7 @@ p{
 .content {
     display: none;
 }
+
+.canvas-color{
+    margin-left: 10px;
+}
